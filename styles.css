@@ -1,0 +1,254 @@
+/* Estilo general */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333; /* Contraste adecuado para la lectura */
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+/* Barra de navegación */
+.navbar {
+  background: #2b3a42;  /* Azul grisáceo oscuro */
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.nav-links a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #c1a165;  /* Dorado suave */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+/* Hacemos la imagen redonda */
+.logo {
+  width: 60px;
+  height: 100px; /* Ajusta la altura del logotipo para que se vea más grande */
+  width: auto; /* Mantiene la relación de aspecto */
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+.site-title {
+  font-size: 22px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* Hero Section */
+.hero {
+  background: url('img/banner.png') no-repeat center center/cover;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Alineación vertical más arriba */
+  padding-top: 40px; /* Para mover el botón un poco hacia abajo y no cubrir la frase */
+  text-align: center;
+  position: relative;
+}
+
+.hero button {
+  background-color: #c1a165; /* Dorado suave */
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  bottom: 20px; /* Se mantiene cerca de la parte inferior */
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil en la parte inferior */
+}
+
+.hero button:hover {
+  background-color: #2b3a42; /* Azul grisáceo oscuro */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más fuerte al pasar el ratón */
+}
+
+.hero button:hover {
+  background-color: #2b3a42; /* Azul grisáceo oscuro */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .site-title {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .hero button {
+    margin-top: 20px;
+    width: 80%;  /* Botón más grande en móvil */
+    font-size: 16px;
+  }
+}
+
+/* Producto Slider */
+.productos-slider .slider {
+  position: relative;
+  overflow: hidden;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  max-width: 800px;
+}
+
+.articulos {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.articulo {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background: white;
+}
+
+.articulo h2 {
+  margin-top: 0;
+}
+
+/* Botones de la galería */
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.btn:hover {
+  background: rgba(0,0,0,0.7);
+}
+
+/* Productos */
+.productos-lista .productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.producto {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.producto h3 {
+  margin-top: 15px;
+}
+
+/* Footer */
+footer {
+  background: #2b3a42;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Contacto */
+.contacto {
+  background: #e0e0e0;
+  padding: 40px 20px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.contacto button {
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+  background-color: #c1a165;
+  color: white;
+  border: none;
+  border-radius: 25px;
+}
+
+.contacto button:hover {
+  background-color: #2b3a42;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 250px; /* Se ajusta la altura para que la imagen no quede tan recortada */
+    padding-top: 30px;
+  }
+
+  .hero button {
+    margin-top: 20px;
+    width: auto; /* Mantener el tamaño del botón según su contenido */
+    font-size: 16px;
+    padding: 12px 25px; /* Ajustar el relleno para que se vea adecuado */
+    position: absolute;
+    bottom: 10px; /* Mantener el botón más cerca de la parte inferior */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
