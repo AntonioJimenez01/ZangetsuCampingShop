@@ -273,4 +273,30 @@ footer p {
     left: 50%;
     transform: translateX(-50%);
   }
+
+  .fotos-local {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.fotos-local img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Mapa responsivo */
+.ubicacion iframe {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
 }
