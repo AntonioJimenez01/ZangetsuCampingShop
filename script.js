@@ -31,7 +31,7 @@ function contactarWhatsapp() {
   // Reiniciar el intervalo automático
   function reiniciarIntervalo() {
     clearInterval(intervalo);
-    intervalo = setInterval(cambiarArticulo, 3000);
+    intervalo = setInterval(cambiarArticulo, 6000);
   }
   
   // Eventos de los botones
@@ -46,5 +46,5 @@ function contactarWhatsapp() {
   });
   
   // Iniciar el slider automático
-  intervalo = setInterval(cambiarArticulo, 3000);
+  intervalo = setInterval(cambiarArticulo, 6000);
   

@@ -14,6 +14,7 @@
       <h1 class="site-title">Zangetsu Camping Shop</h1>
       <nav class="nav-links">
         <a href="#productos">Productos</a>
+        <a href="#registro">Registro Curso</a>
         <a href="#contacto">Contacto</a>
       </nav>
     </div>
@@ -32,17 +33,17 @@
             <div class="articulo">
               <img src="img/articulos/navaja multiherramienta pulasa/navajaMultiherramienta.png" alt="Tienda" width="400" height="400">
               <h2>Navaja Multiherramienta</h2>
-              <p>La navaja multiherramienta es una herramienta compacta y versátil diseñada para ofrecer múltiples funciones en un solo dispositivo. Generalmente fabricada en acero inoxidable, cuenta con una variedad de accesorios plegables como cuchillo, tijeras para alambre, destornilladores, abrebotellas, abrelatas y pinzas.</p>
+              <p>La navaja multiherramienta es un dispositivo compacto de acero inoxidable con varios accesorios plegables como cuchillo, tijeras, destornilladores y abrebotellas.</p>
             </div>
             <div class="articulo">
               <img src="img/articulos/mochila kampak ms103/mochilaKampakms103.png" alt="Tienda" width="400" height="400">
               <h2>Mochila Kampak</h2>
-              <p>La Kampak MS103 es una mochila deportiva y ligera, ideal para uso diario o actividades al aire libre. Cuenta con 5 compartimentos principales, 2 bolsillos laterales y correas ajustables. Tiene espacio suficiente para ropa, libros y una laptop de hasta 14″. Está fabricada en material resistente tipo “True Tone” que luce moderno y duradero.</p>
+              <p>La Kampak MS103 es una mochila ligera y resistente con varios compartimentos y espacio para laptop de 14.</p>
             </div>
             <div class="articulo">
               <img src="img/articulos/linterna kampak/LinternaKampakDobleLuz.webp" alt="Tienda" width="400" height="400">
               <h2>Lampara 8 modos de Luz Kampak</h2>
-              <p>La Lampara con Estrobo BL01 es una linterna táctica recargable con hasta 8 modos de iluminación, incluyendo estroboscópico. Cuenta con una batería interna que ofrece más de 4 horas de uso continuo, y su cuerpo metálico garantiza resistencia y durabilidad. Su clip de montaje permite fijarla fácilmente a gorras, chalecos, bolsillos o manubrios de bicicleta. </p>
+              <p>La Lámpara BL01 es una linterna táctica recargable con 8 modos, batería de 4 horas y clip para montar en gorras o bicicletas.</p>
             </div>
           </div>
           <button class="btn prev">❮</button>
@@ -105,6 +106,15 @@
       </div>
     </section>
 
+    <section id="registro" class="registro">
+      <div class="container">
+        <h2>Curso de Senderismo</h2>
+        <p class="parrafoCurso">¿Quieres aprender técnicas de senderismo y estar listo para tus aventuras? ¡Regístrate ahora!</p>
+        <button onclick="window.location.href='registro.html'">Registrarse a Curso de Senderismo</button>
+
+      </div>
+    </section>
+
     <section id="tiendaDetalles" class="tienda-detalles">
       <div class="container">
         <h2>Sobre Nosotros</h2>
@@ -112,10 +122,19 @@
       </div>
     </section>
 
-    <section id="contacto" class="contacto">
+    <section id="ubicacion" class="ubicacion">
       <div class="container">
         <p>📍 Ubicación:<br>C. Las Golondrinas 2, El Mirador, <br>91170 Xalapa-Enríquez, Ver.</p>
         <!--<p>📧 Email: <a href="mailto:contacto@zangetsucamping.com">contacto@zangetsucamping.com</a></p>-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.0679131981883!2d-96.91282892501026!3d19.53869768176348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85db31fa083f0fc9%3A0x96f9dce708e042b!2sC.%20Las%20Golondrinas%202%2C%20El%20Mirador%2C%2091170%20Xalapa-Enr%C3%ADquez%2C%20Ver.!5e0!3m2!1ses!2smx!4v1752434166195!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="fotos-local">
+        <img src="img/img1.jpeg" alt="Fachada del local 1">
+        <img src="img/img2.jpeg" alt="Fachada del local 2">
+      </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+      <div class="container">
         <h2>Contacto</h2>
         <button onclick="contactarWhatsapp()">Contáctanos por WhatsApp</button>
       </div>
@@ -129,5 +148,23 @@
   </footer>
 
   <script src="script.js"></script>
+  <style>
+  .fotos-local {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  gap: 2rem; /* Espacio entre fotos */
+  margin-top: 1rem;
+  flex-wrap: wrap; /* Que se acomoden bien en pantallas pequeñas */
+}
+
+.fotos-local img {
+  width: 500px; /* Tamaño un poco más grande */
+  height: auto;
+  border-radius: 8px; /* Opcional: esquinas redondeadas */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15); /* Sombra suave */
+}
+
+</style>
+
 </body>
 </html>
