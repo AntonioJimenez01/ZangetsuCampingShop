@@ -192,18 +192,33 @@ footer p {
 .contacto {
   color: white;
   background: #102c3c;
+  
 }
+#contacto h2 {
+  margin: 0 0 10px 0;
+  text-align: left;
+}
+.contactanos{
+  text-align: left;
+}
+
+.contactanos a {
+  text-align: left;
+  color: inherit; /* Usa el color del párrafo */
+  text-decoration: none; /* Quita el subrayado */
+}
+
 
 .contacto button {
   padding: 12px 24px;
   font-size: 16px;
-  cursor: pointer;
   margin-top: 15px;
-  background-color: #c1a165;
+  background-color: #162b4c;
   color: white;
-  border: none;
-  border-radius: 25px;
+  display: block; 
+  margin: 15px 0 0 0;
 }
+
 
 .contacto button:hover {
   background-color: #2b3a42;
@@ -299,3 +314,25 @@ footer p {
   aspect-ratio: 16 / 9;
   border: 0;
 }
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  width: 60px;
+  height: 60px;
+}
+
+.whatsapp-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-button img:hover {
+  transform: scale(1.1);
+}
+

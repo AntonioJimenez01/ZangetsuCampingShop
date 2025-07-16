@@ -1,7 +1,7 @@
 function contactarWhatsapp() {
     const telefono = "522283927134";
     const mensaje = encodeURIComponent("Hola, estoy interesado en un artículo de Zangetsu Camping Shop.");
-    window.open(`https://wa.me/${telefono}?text=${mensaje}`, '_blank');
+    window.open(`https://wa.me/message/A64IE6PV7GXNN1?text=${mensaje}`, '_blank');
   }
   
   const articulos = document.querySelector('.articulos');

@@ -67,7 +67,7 @@
       <div class="container">
         <h2>Curso de Senderismo</h2>
         <p class="parrafoCurso">¿Quieres aprender técnicas de senderismo y estar listo para tus aventuras? ¡Regístrate ahora!</p>
-        <button onclick="window.location.href='registro.html'">Registrarse a Curso de Senderismo</button>
+        <!--<button onclick="window.location.href='registro.html'">Registrarse a Curso de Senderismo</button>-->
       </div>
     </section>
 
@@ -125,7 +125,7 @@
         </div>
       </div>
     </section> 
-    
+
     <section id="tiendaDetalles" class="tienda-detalles">
       <div class="container">
         <h2>Sobre Nosotros</h2>
@@ -146,8 +146,9 @@
 
     <section id="contacto" class="contacto">
       <div class="container">
-        <h2>Contacto</h2>
-        <button onclick="contactarWhatsapp()">Contáctanos por WhatsApp</button>
+        <p class="contactanos">
+        <a href="">Contáctanos</a>
+        </p>
       </div>
     </section>
   </main>
@@ -159,5 +160,11 @@
   </footer>
 
   <script src="script.js"></script>
+  <a href="#" 
+   class="whatsapp-button" 
+   aria-label="Contáctanos por WhatsApp" 
+   onclick="contactarWhatsapp(); return false;">
+  <img src="img/WhatsApp.png" alt="WhatsApp">
+</a>
 </body>
 </html>
