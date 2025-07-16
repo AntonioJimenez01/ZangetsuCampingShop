@@ -273,30 +273,29 @@ footer p {
     left: 50%;
     transform: translateX(-50%);
   }
-
-  .fotos-local {
+}
+.fotos-local {
   display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem; /* espacio entre imágenes */
+  margin-top: 1rem;
 }
 
 .fotos-local img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
+  width: 40%;  /* tamaño fijo */
+  height: 40%;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
 }
+
 
 /* Mapa responsivo */
 .ubicacion iframe {
-  width: 100%;
-  max-width: 100%;
+  width: 50%;
+  max-width: 50%;
   height: auto;
   aspect-ratio: 16 / 9;
   border: 0;
-}
-
 }
