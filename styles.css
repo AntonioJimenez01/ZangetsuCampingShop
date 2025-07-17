@@ -298,8 +298,8 @@ footer p {
 }
 
 .fotos-local img {
-  width: 40%;  /* tamaño fijo */
-  height: 40%;
+  width: 350px;  /* tamaño fijo */
+  height: auto;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   object-fit: cover;
@@ -308,8 +308,8 @@ footer p {
 
 /* Mapa responsivo */
 .ubicacion iframe {
-  width: 50%;
-  max-width: 50%;
+  width: 70%;
+  max-width: 70%;
   height: auto;
   aspect-ratio: 16 / 9;
   border: 0;
