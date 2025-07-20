@@ -57,10 +57,13 @@ h1, h2, h3 {
   margin: 0 auto;
 }
 
-.site-title {
+.site-title  {
   font-size: 22px;
-  margin: 0;
+  margin: 0 auto;          /* Centra el bloque si tiene ancho definido */
   text-transform: uppercase;
+  text-align: center;      /* Centra el texto dentro del elemento */
+  display: block;          /* Asegura que el elemento sea block-level */
+  width: 50%;             /* O un ancho definido para que funcione margin auto */
 }
 
 /* Hero Section */
