@@ -68,7 +68,11 @@ h1, h2, h3 {
 
 /* Hero Section */
 .hero {
-  background: url('img/banner.png') no-repeat center center/cover;
+  background: #2b3a42; /* color base */
+  background-image: url('img/banner.png'); /* versión muy ligera o borrosa */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   height: 300px;
   display: flex;
   justify-content: center;
@@ -76,7 +80,9 @@ h1, h2, h3 {
   padding-top: 40px;
   text-align: center;
   position: relative;
+  transition: background-image 0.5s ease-in-out;
 }
+
 
 .hero button {
   background-color: #c1a165;
